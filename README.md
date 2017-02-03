@@ -88,6 +88,11 @@ S  V  L  T
 L  Qu Z  F
 ```
 
+## Running Tests
+Up to this point, we've been writing driver code to see whether or not our code works. Today, we're starting to use [RSPEC](http://rspec.info/). The tests in the `spec` file should help you guide your development. Your goal is to make all the tests pass by the end of finishing this challenge. Here's how to install and run your specs:
+1. `gem install rspec` (you may need sudo)
+1. Instead of running `ruby boggle_board_spec.rb`, we're going to `rspec boggle_board_spec.rb`
+
 ## Additional Resources
 
 * [Boggle on Wikipedia](http://en.wikipedia.org/wiki/Boggle)
