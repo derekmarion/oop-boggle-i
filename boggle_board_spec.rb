@@ -35,7 +35,7 @@ describe "Boggle Board - Step 1" do
   end
 
   it 'has 4 rows with 4 letters each' do
-    expect(board.shake!.all? {|row| row.length == 4}).to be_true
+    expect(board.shake!.all? {|row| row.length == 4}).to eq(true)
   end
 end
 
