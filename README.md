@@ -10,7 +10,7 @@ As mentioned above we are only going to generate the board for now. The board lo
 
 To model the board generation, imagine how this might take place in the real world. For instance, in the physical version of the game, you would shake the boggle die to randomly create a 4x4 grid of randomly generated letters.
 
-## Step 1: Dumb Boggle Board
+## Step 1: Basic Boggle Board
 
 This first iteration of our board will not care if it's possible for a word to be created with our generated board. In other words, we're going to focus on building out the necessary data structure to emulate our board.
 
