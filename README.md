@@ -1,6 +1,6 @@
 # Boggle Challenge Part 1: Basic Board Generation
 
-##Summary
+## Summary
 
 The goal of this exercise is to create a basic Boggle board. If you're not sure what Boggle or its board looks like, please peruse [Boggle on Wikipedia](http://en.wikipedia.org/wiki/Boggle).
 
@@ -10,17 +10,17 @@ As mentioned above we are only going to generate the board for now. The board lo
 
 To model the board generation, imagine how this might take place in the real world. For instance, in the physical version of the game, you would shake the boggle die to randomly create a 4x4 grid of randomly generated letters.
 
-## Step 1: Basic Boggle Board
+### Step 1: Basic Boggle Board
 
 This first iteration of our board will not care if it's possible for a word to be created with our generated board. In other words, we're going to focus on building out the necessary data structure to emulate our board.
 
-The 'BoggleBoard' class has one core instance method: 'shake!'
+The `BoggleBoard` class has one core instance method: `shake!`
 
-1. Think about how to represent the board. 'shake!' should modify the board by filling each cell with a random upper-case letter 'A..Z'. Also, there aren't any restrictions on the letters. They can appear multiple times, so choose at random.
+1. Think about how to represent the board. `shake!` should modify the board by filling each cell with a random upper-case letter `A..Z`. Also, there aren't any restrictions on the letters. They can appear multiple times, so choose at random.
 
 2. If you've looked into Boggle, you're probably thinking about how in Boggle 'Q' is always 'Qu'. Don't worry about this, instead just use 'Q' to represent 'Qu'
 
-### Example
+#### Example
 
 Our code should output something like this:
 
@@ -33,7 +33,7 @@ Our code should output something like this:
    ____
 ```
 
-* When 'shake!' is invoked on our board, it should output something like this:
+* When `shake!` is invoked on our board, it should output something like this:
 
 ```ruby
    LMVQ
@@ -42,9 +42,9 @@ Our code should output something like this:
    GDMV
 ```
 
-* When I 'shake!' it again, it should randomly generate the board again.
+* When I `shake!` it again, it should randomly generate the board again.
 
-## Step 2: Smart Boggle board
+### Step 2: Smart Boggle board
 
 We currently implement our board without modeling dice. We should do that next to make our board come closer to modeling the a real Boggle board.
 
@@ -52,7 +52,7 @@ When modeling the die it's important to conceptualize how this works in the real
 
 Perhaps we could leverage a secondary array to model a die landing in only one cell without explicitly making note of which dice have landed and which haven't. Would we use something else?
 
-We're still only going to have one core method, "shake!" on our BoggleBoard class. The following is a list of Boggle Dice, with 'Q' representing 'Qu':
+We're still only going to have one core method, `shake!` on our `BoggleBoard` class. The following is a list of Boggle Dice, with 'Q' representing 'Qu':
 
 ```ruby
 AAEEGN
@@ -73,7 +73,7 @@ HLNNRZ
 DEILRX
 ```
 
-## Step 3: Dealing with that Pesky 'Qu'
+### Step 3: Dealing with that Pesky 'Qu'
 
 Our Boggle board generator is nearly finished! We still have one pesky little issue with the representation of 'Qu'. Our board currently prints a 'Q' instead of a 'Qu'. How could we print a 'Qu' instead?
 
@@ -97,4 +97,4 @@ Up to this point, we've been writing driver code to see whether or not our code 
 
 * [Boggle on Wikipedia](http://en.wikipedia.org/wiki/Boggle)
 * [Play Boggle online](http://www.wordplays.com/boggle)
-* [String#ljust](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-ljust)
+* [String#ljust](http://ruby-doc.org/core-2.4.0/String.html#method-i-ljust)
