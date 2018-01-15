@@ -9,7 +9,7 @@ describe "Boggle Board - Step 1" do
   end
 
   it 'has a printable representation of 4 underscores in each of 4 rows on separate lines BEFORE it is shaken' do
-    expect(board.to_s).to match(/^_{4}${4}/)
+    expect(board.to_s).to match(/^(_{4}\n){4}/)
   end
 
   it 'has a printable representation of 4 letters in each of 4 rows on separate lines AFTER it is shaken' do
