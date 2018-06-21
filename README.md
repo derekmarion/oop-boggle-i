@@ -26,7 +26,7 @@ Our code should output something like this:
 
 * When a new 'BoggleBoard' is initialized the output should look like this:
 
-```ruby
+```python
    ____
    ____
    ____
@@ -35,7 +35,7 @@ Our code should output something like this:
 
 * When `shake!` is invoked on our board, it should output something like this:
 
-```ruby
+```python
    LMVQ
    DKHZ
    SUCO
@@ -54,7 +54,7 @@ Perhaps we could leverage a secondary array to model a die landing in only one c
 
 We're still only going to have one core method, `shake!` on our `BoggleBoard` class. The following is a list of Boggle Dice, with 'Q' representing 'Qu':
 
-```ruby
+```python
 AAEEGN
 ELRTTY
 AOOTTW
