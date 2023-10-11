@@ -14,7 +14,8 @@ class BoggleBoard:
   
   def shake(self):
     for idx in range(0, len(self._board)):
-      rando = ''.join(random.choices(string.ascii_uppercase, k=6))
+      rando = ' '.join(random.choices(string.ascii_uppercase, k=6))
+      rando = rando.replace("Q", "Qu")
       self._board[idx] = rando
     self.get_board
 
